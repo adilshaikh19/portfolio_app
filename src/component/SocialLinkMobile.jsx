@@ -3,23 +3,23 @@ import { FaGithub , FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const SocialLinks = () => {
+const SocialLinkMobile = () => {
     const links = [
         {
             id: 1,
             child: (
               <>
-                LinkedIn <FaLinkedin size={30} />
+                <FaLinkedin size={30} /> LinkedIn 
               </>
             ),
             href: "https://linkedin.com",
-            style: "rounded-tr-md",
+            style: "rounded-tl-md",
         },
         {
             id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          <FaGithub size={30} /> GitHub 
         </>
       ),
       href: "https://github.com/adilshaikh19",
@@ -28,7 +28,7 @@ const SocialLinks = () => {
             id: 3,
             child: (
               <>
-                Mail <HiOutlineMail size={30} />
+                <HiOutlineMail size={30} /> Mail 
               </>
             ),
             href: "mailto:foo@gmail.com",
@@ -36,24 +36,24 @@ const SocialLinks = () => {
         { id: 4,
             child: (
               <>
-                Resume <BsFillPersonLinesFill size={30} />
+                <BsFillPersonLinesFill size={30} /> Resume 
               </>
             ),
             href: "/resume.pdf",
-            style: "rounded-br-md",
+            style: "rounded-bl-md",
             download: true,
         },
           
     ]
 
   return (
-    <div className=" hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div className="top-[35%] right-0 fixed lg:hidden">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex justify-between items-center w-40 h-12 px-4 mr-[-100px] hover:mr-[-10px] hover:rounded-md duration-300 bg-gray-500" +
               " " +
               style
             }
@@ -74,4 +74,4 @@ const SocialLinks = () => {
   )
 }
 
-export default SocialLinks
+export default SocialLinkMobile
