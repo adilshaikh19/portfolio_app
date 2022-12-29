@@ -14,25 +14,15 @@ const About = () => {
         </div>
 
         <div className='overflow-clip'>
+        
         <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+        As a computer science student, I am highly motivated to learn and grow as a developer. I am constantly seeking new challenges and opportunities to apply my skills and knowledge in real-world settings. I am a team player and enjoy collaborating with others to find creative solutions to complex problems. 
+        </p><br></br>
+        <p className="text-xl">
+        I am dedicated to creating innovative solutions and delivering high-quality products. My passion for coding and problem-solving drives me to continuously improve my skills and stay up-to-date on the latest technologies. I value collaboration and believe that great things can be achieved through teamwork. Whether I'm working on a personal project or a client project, I always strive for excellence and aim to exceed expectations
         </p>
 
         <br />
-
-        <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
-        </p>
         </div>
       </div>
     </div>
