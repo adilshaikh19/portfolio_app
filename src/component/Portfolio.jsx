@@ -76,7 +76,7 @@ const Portfolio = () => {
                   alt=""
                   className="rounded-md"
                 />
-                <p className="bg-gradient-to-r from-gray-400 to-black-400 rounded-md text-black font-semibold">{title}</p>
+                <p className="bg-gradient-to-r from-gray-400 to-black-400 rounded-bl-sm text-black font-semibold">{title}</p>
               <div className="flex items-center justify-center">
                 
                 <a href={demo} target="_blank" rel="noreferrer">
