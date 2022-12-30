@@ -1,39 +1,56 @@
 import React from "react";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
 import potato from "../assets/portfolio/potato.jpg";
 import cartoon from "../assets/portfolio/cartoon.jpg";
+import expenditure from "../assets/portfolio/expenditure.jpg";
+import myportfolio from "../assets/portfolio/myportfolio.jpg";
+import movies from "../assets/portfolio/movies.jpg";
+import heart from "../assets/portfolio/heart.jpg";
+
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       src: potato,
+      title : "Potato Leaf Disease Classification",
+      demo : 'https://github.com/adilshaikh19/Potato-Leaf-Disease-Classification',
+      code : 'https://github.com/adilshaikh19/Potato-Leaf-Disease-Classification'
       
     },
     {
       id: 2,
       src: cartoon,
+      title : "Cartoonify Image using CV",
       demo : 'https://github.com/adilshaikh19/cartoonified-Image',
       code : 'https://github.com/adilshaikh19/cartoonified-Image/tree/main/cartoon_image'
     },
     {
       id: 3,
-      src: navbar,
+      src: expenditure,
+      title : "Expenditure Data Analysis",
+      demo : 'https://github.com/adilshaikh19/Expenditure-Data-Analysis',
+      code : 'https://github.com/adilshaikh19/Expenditure-Data-Analysis/tree/main/Expenditure%20Data%20Analysis'
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: myportfolio,
+      title : "Portfolio App",
+      demo : 'https://adilshaikh-portfolio.netlify.app/',
+      code : 'https://github.com/adilshaikh19/portfolio_app'
     },
     {
       id: 5,
-      src: installNode,
+      src: movies,
+      title : "Movie Search-Reactjs",
+      demo : 'https://github.com/adilshaikh19/movie_search-reactjs',
+      code : 'https://github.com/adilshaikh19/movie_search-reactjs'
     },
     {
       id: 6,
-      src: reactWeather,
+      src: heart,
+      title : "Heart Disease Prediction - ML",
+      demo : 'https://github.com/adilshaikh19/Heart-Disease-Prediction---Streamlit-WebApp',
+      code : 'https://github.com/adilshaikh19/Heart-Disease-Prediction---Streamlit-WebApp'
     },
   ];
 
@@ -51,14 +68,23 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src ,demo, code}) => (
+          {portfolios.map(({ id, src ,title ,demo, code}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
+              <figure className="truncate">
+                <img
+                  src={src}
+                  alt=""
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+                <figcaption class="px-5 text-center text-lg text-white font-semibold">
+                    <div>
+                      <h1>{title}</h1>
+                    </div>
+                  </figcaption>
+              </figure>
+              {/* <div className="flex justify-center bg-white text-black truncate"><p className="sm:truncate px-5 overflow-hidden">Expenditurescdscdcdcdcdcdccddcdcdcdsdsdsdsdd</p></div> */}
               <div className="flex items-center justify-center">
+                
                 <a href={demo} target="_blank" rel="noreferrer">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   Demo
