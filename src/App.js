@@ -6,7 +6,7 @@ import About from './component/About'
 import Portfolio from './component/Portfolio'
 import Experience from './component/Experience'
 import Contact from './component/Contact'
-import SocialLinkMobile from './component/SocialLinkMobile'
+
 
 const App = () => {
   return (
@@ -14,7 +14,6 @@ const App = () => {
     <div>
         <NavBar />
         <Home />
-        {/* <SocialLinkMobile /> */}
         <About />
         <Portfolio />
         <Experience />
