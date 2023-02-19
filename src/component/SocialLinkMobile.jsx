@@ -13,7 +13,7 @@ const SocialLinkMobile = () => {
               </>
             ),
             href: "https://linkedin.com",
-            style: "rounded-tl-md",
+            
         },
         {
             id: 2,
@@ -40,25 +40,16 @@ const SocialLinkMobile = () => {
               </>
             ),
             href: "/resume.pdf",
-            style: "rounded-bl-md",
             download: true,
         },
           
     ]
 
   return (
-    <div className="top-[35%] right-0 fixed lg:hidden">
-      <ul>
-        {links.map(({ id, child, href, style, download }) => (
-          <li
-            key={id}
-            className={
-              "flex justify-between items-center w-40 h-12 px-4 mr-[-100px] hover:mr-[-10px] hover:rounded-md duration-300 bg-gray-500" +
-              " " +
-              style
-            }
-          >
-            <a
+    <div className="inline-flex rounded-md shadow-sm lg:hidden md:hidden" role="group">
+            {links.map(({id, child, href, style, download }) => (
+                <button key={id} type="button" className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-l-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                  <a
               href={href}
               className="flex justify-between items-center w-full text-white"
               download={download}
@@ -67,9 +58,10 @@ const SocialLinkMobile = () => {
             >
               {child}
             </a>
-          </li>
-        ))}
-      </ul>
+                </button>
+              ))}
+            
+            
     </div>
   )
 }

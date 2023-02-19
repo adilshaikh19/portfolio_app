@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
+      className="h-screen w-full bg-gradient-to-b from-black to-gray-800 w-full">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <p className="text-white font-signature text-xl">Hii, I'm Adil Shaikh</p>
@@ -42,10 +42,11 @@ const Home = () => {
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 lg:w-1/2"
           />
-          <div className="flex flex-col">
+        
+        </div>
+        <div className="pt-5">
            <SocialLinkMobile />
           </div>
-        </div>
       </div>
     </div>
   );
