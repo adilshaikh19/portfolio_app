@@ -44,9 +44,6 @@ const Home = () => {
           />
         
         </div>
-        <div className="pt-5">
-           <SocialLinkMobile />
-          </div>
       </div>
     </div>
   );
