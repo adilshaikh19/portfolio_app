@@ -12,12 +12,10 @@ const Home = () => {
         <div className="flex flex-col justify-center h-full">
           <p className="text-white font-signature text-xl">Hii, I'm Adil Shaikh</p>
           <p className="text-4xl lg:text-6xl font-bold text-white">
-            I am a FullStack Developer
+            I am a Computer Science Student
           </p>
           <p className="text-gray-500 py-4 max-w-md">
-            I have 1 years of experience building and desgining software.
-            Currently, I love to work on web application using technologies like
-            React, NodeJs and MongoDb.
+            I have 1 year of experience building and designing data science solutions. Currently, I love to work on projects using technologies like Python, Tensorflow, and SQL.
           </p>
 
           <div>

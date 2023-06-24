@@ -2,13 +2,13 @@ import React from 'react'
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
-import reactImage from "../assets/react.png";
-import bootstrap from "../assets/bootstrap.png";
 import github from "../assets/github.png";
-import tailwind from "../assets/tailwind.png";
-import node from "../assets/node.png"
 import mongodb from "../assets/mongodb.png"
 import java from "../assets/java.png"
+import tensorflow from "../assets/tensorflow.svg"
+import sql from "../assets/sql.png"
+import keras from "../assets/keras.png"
+import powerbi from "../assets/powerbi.svg"
 import python from "../assets/python.png"
 
 const Experience = () => {
@@ -26,54 +26,57 @@ const Experience = () => {
           title: "PYTHON",
           style: "shadow-blue-500",
         },
-        {
+         {
           id: 3,
-          src: html,
-          title: "HTML",
-          style: "shadow-orange-500",
-        },
-        {
-          id: 4,
-          src: css,
-          title: "CSS",
-          style: "shadow-blue-500",
-        },
-        {
-          id: 5,
           src: javascript,
           title: "JavaScript",
           style: "shadow-yellow-500",
         },
         {
+          id: 4,
+          src: tensorflow,
+          title: "Tensorflow",
+          style: "shadow-orange-300",
+        },
+        {
+          id: 5,
+          src: keras,
+          title: "Keras",
+          style: "shadow-red-500",
+        },
+        {
           id: 6,
-          src: reactImage,
-          title: "React",
-          style: "shadow-blue-600",
+          src: html,
+          title: "HTML",
+          style: "shadow-orange-500",
         },
         {
           id: 7,
-          src: node,
-          title: "Node",
-          style: "shadow-green-300",
+          src: css,
+          title: "CSS",
+          style: "shadow-blue-500",
         },
+       
+       
         {
           id: 8,
+          src: powerbi,
+          title: "PowerBI",
+          style: "shadow-yellow-300",
+        },
+         {
+          id: 9,
+          src: sql,
+          title: "SQL",
+          style: "shadow-blue-500",
+        },
+        {
+          id: 10,
           src: mongodb,
           title: "MongoDb",
           style: "shadow-green-500",
         },
-        {
-          id: 9,
-          src: bootstrap,
-          title: "Bootstrap",
-          style: "shadow-purple-400",
-        },
-        {
-          id: 10,
-          src: tailwind,
-          title: "Tailwind",
-          style: "shadow-sky-400",
-        },
+       
         {
           id: 11,
           src: github,
